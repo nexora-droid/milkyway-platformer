@@ -297,12 +297,12 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2gdjj"]
 size = Vector2(20, 26)
 
-[node name="Player" type="CharacterBody2D" unique_id=1264159295]
+[node name="Player" type="CharacterBody2D" unique_id=1264159295 groups=["player"]]
 script = ExtResource("1_fjrip")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=160854294]
 sprite_frames = SubResource("SpriteFrames_2gdjj")
-animation = &"jump"
+animation = &"double_jump"
 autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=2051628751]

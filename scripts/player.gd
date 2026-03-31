@@ -1,10 +1,16 @@
 extends CharacterBody2D
 @onready var animated_sprite_2d: AnimatedSprite2D = $AnimatedSprite2D
+@onready var killzone: Area2D = $"../Killzone"
+@onready var collision_shape_2d: CollisionShape2D = $CollisionShape2D
 
 
 const SPEED = 150.0
 const JUMP_VELOCITY = -275.0
 var jumps := 0
+
+func _ready() -> void:
+	Engine.time_scale = 1
+	killzone.connect("death", Callable(self, "die"))
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -30,6 +36,8 @@ func _physics_process(delta: float) -> void:
 			animated_sprite_2d.play("default")
 		else:
 			animated_sprite_2d.play("run")
+	elif jumps > 1:
+		animated_sprite_2d.play("double_jump")
 	else:
 		animated_sprite_2d.play("jump")
 	if direction:
@@ -37,3 +45,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 	move_and_slide()
+
+func die() -> void :
+	self.queue_free()
+	Engine.time_scale = 2
+	await get_tree().create_timer(0.5).timeout
+	get_tree().quit()
