@@ -18,6 +18,12 @@ config/icon="res://icon.svg"
 [autoload]
 
 System="*uid://b2ynlekfwi7bq"
+Music="*uid://boei583h0mjaj"
+
+[display]
+
+window/size/viewport_width=1920
+window/size/viewport_height=1080
 
 [editor_plugins]
 

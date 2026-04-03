@@ -7,10 +7,14 @@ extends CharacterBody2D
 const SPEED = 150.0
 const JUMP_VELOCITY = -275.0
 var jumps := 0
-
+var dead := false
 func _ready() -> void:
 	Engine.time_scale = 1
-	killzone.connect("death", Callable(self, "die"))
+
+func _process(delta: float) -> void:
+	if System.alive != true and dead == false:
+		dead = true
+		die()
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -47,7 +51,7 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func die() -> void :
-	self.queue_free()
-	Engine.time_scale = 2
-	await get_tree().create_timer(0.5).timeout
+	collision_shape_2d.queue_free()
+	Engine.time_scale = 1.5
+	await get_tree().create_timer(1).timeout
 	get_tree().quit()

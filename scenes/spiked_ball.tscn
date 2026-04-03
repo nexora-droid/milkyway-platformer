@@ -1,0 +1,80 @@
+[gd_scene format=3 uid="uid://bvffgdd1nx6hs"]
+
+[ext_resource type="Script" uid="uid://ytopscgi43t8" path="res://scripts/spike_path.gd" id="1_67wju"]
+[ext_resource type="Script" uid="uid://7k8hwge1nwhk" path="res://scripts/spiked_ball.gd" id="2_8egs4"]
+[ext_resource type="Texture2D" uid="uid://b1m5k4m1mcpgr" path="res://assets/Free/Traps/Spiked Ball/Spiked Ball.png" id="2_tjg15"]
+[ext_resource type="Texture2D" uid="uid://ccit4dqare5a8" path="res://assets/Free/Traps/Spiked Ball/Chain.png" id="3_tjg15"]
+
+[sub_resource type="Curve2D" id="Curve2D_8egs4"]
+_data = {
+"points": PackedVector2Array(0, 0, 0, 0, 37, -36, -17.280455, 17.739319, 17.280455, -17.739319, 70, -36)
+}
+point_count = 2
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_tjg15"]
+radius = 13.453624
+
+[node name="Path2D" type="Path2D" unique_id=1576574733]
+curve = SubResource("Curve2D_8egs4")
+
+[node name="PathFollow2D" type="PathFollow2D" parent="." unique_id=1316583262]
+position = Vector2(53.501606, -27.11718)
+rotation = 0.01219016
+progress = 18.77027
+v_offset = 1.0
+loop = false
+script = ExtResource("1_67wju")
+
+[node name="Sprite2D" type="Sprite2D" parent="PathFollow2D" unique_id=688289204]
+position = Vector2(-1.9274251, -1.1335917)
+rotation = -0.63184893
+texture = ExtResource("3_tjg15")
+
+[node name="Chain8" type="Sprite2D" parent="PathFollow2D/Sprite2D" unique_id=165766036]
+position = Vector2(-34.060284, 27.940193)
+texture = ExtResource("3_tjg15")
+
+[node name="Chain" type="Sprite2D" parent="PathFollow2D/Sprite2D" unique_id=464986368]
+position = Vector2(-5.06028, 3.9401913)
+texture = ExtResource("3_tjg15")
+
+[node name="Chain2" type="Sprite2D" parent="PathFollow2D/Sprite2D" unique_id=916096501]
+position = Vector2(-5.06028, 3.9401913)
+texture = ExtResource("3_tjg15")
+
+[node name="Chain3" type="Sprite2D" parent="PathFollow2D/Sprite2D" unique_id=1774819529]
+position = Vector2(-10.060278, 7.9401894)
+texture = ExtResource("3_tjg15")
+
+[node name="Chain4" type="Sprite2D" parent="PathFollow2D/Sprite2D" unique_id=246111461]
+position = Vector2(-15.060276, 11.940189)
+texture = ExtResource("3_tjg15")
+
+[node name="Chain5" type="Sprite2D" parent="PathFollow2D/Sprite2D" unique_id=1440660562]
+position = Vector2(-20.060278, 15.940191)
+texture = ExtResource("3_tjg15")
+
+[node name="Chain6" type="Sprite2D" parent="PathFollow2D/Sprite2D" unique_id=1237970936]
+position = Vector2(-24.060276, 19.940191)
+texture = ExtResource("3_tjg15")
+
+[node name="Chain7" type="Sprite2D" parent="PathFollow2D/Sprite2D" unique_id=1461722246]
+position = Vector2(-29.06028, 23.940195)
+texture = ExtResource("3_tjg15")
+
+[node name="Spiked Ball" type="Area2D" parent="PathFollow2D/Sprite2D" unique_id=1752999680]
+position = Vector2(-48.27861, 39.095627)
+script = ExtResource("2_8egs4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PathFollow2D/Sprite2D/Spiked Ball" unique_id=1993378863]
+position = Vector2(5.4166236, -3.5890157)
+rotation = 0.73991984
+shape = SubResource("CircleShape2D_tjg15")
+
+[node name="SpikedBall" type="Sprite2D" parent="PathFollow2D/Sprite2D/Spiked Ball" unique_id=1029430184]
+position = Vector2(6.2183304, -4.1554337)
+rotation = 0.8115781
+scale = Vector2(1.0000001, 1.0000001)
+texture = ExtResource("2_tjg15")
+
+[connection signal="body_entered" from="PathFollow2D/Sprite2D/Spiked Ball" to="PathFollow2D/Sprite2D/Spiked Ball" method="_on_body_entered"]

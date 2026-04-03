@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://boei583h0mjaj"]
+
+[ext_resource type="AudioStream" uid="uid://dmo7cod4gliur" path="res://assets/music/sakuracloud - miffy cafe  [NCS Release].mp3" id="1_3h6ak"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" unique_id=1556379587]
+stream = ExtResource("1_3h6ak")
+autoplay = true
+parameters/looping = true

@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://bsuo8bvlmf0tx"]
 
 [ext_resource type="Script" uid="uid://c7fix8rye57bc" path="res://scenes/apple.gd" id="1_3dmh2"]
-[ext_resource type="Texture2D" uid="uid://baaq62jixcbms" path="res://Free/Items/Fruits/Apple.png" id="1_7vr8k"]
-[ext_resource type="Texture2D" uid="uid://trd2vl7bw37t" path="res://Free/Items/Fruits/Collected.png" id="2_3dmh2"]
+[ext_resource type="Texture2D" uid="uid://baaq62jixcbms" path="res://assets/Free/Items/Fruits/Apple.png" id="1_7vr8k"]
+[ext_resource type="Texture2D" uid="uid://trd2vl7bw37t" path="res://assets/Free/Items/Fruits/Collected.png" id="2_3dmh2"]
+[ext_resource type="AudioStream" uid="uid://b4el8l7d6bpy5" path="res://assets/music/nom-nom-sound-effect.mp3" id="4_pg1xk"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_pg1xk"]
 atlas = ExtResource("1_7vr8k")
@@ -190,5 +191,8 @@ autoplay = "default"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1548873655]
 shape = SubResource("CircleShape2D_p21wo")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1512946727]
+stream = ExtResource("4_pg1xk")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
