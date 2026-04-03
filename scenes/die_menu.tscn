@@ -1,0 +1,379 @@
+[gd_scene format=3 uid="uid://d26u82lgcg54u"]
+
+[ext_resource type="Texture2D" uid="uid://2wlujcinfdpv" path="res://assets/Free/Background/Pink.png" id="1_uo3v1"]
+[ext_resource type="FontFile" uid="uid://b6rd8qei1ruxo" path="res://assets/Free/Menu/Text/Pixelify_Sans (1)/static/PixelifySans-Bold.ttf" id="2_4utos"]
+[ext_resource type="Texture2D" uid="uid://djlt34wc5xi0f" path="res://assets/Free/Menu/Buttons/Restart.png" id="3_uo3v1"]
+[ext_resource type="Script" uid="uid://dsmxkchy44vrq" path="res://scripts/restart.gd" id="4_4utos"]
+
+[node name="MainMenu" type="Control" unique_id=715512184]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="BG" type="GridContainer" parent="." unique_id=2071935699]
+layout_mode = 0
+offset_right = 1914.0
+offset_bottom = 1078.0
+theme_override_constants/h_separation = 256
+theme_override_constants/v_separation = 256
+columns = 8
+metadata/_edit_lock_ = true
+
+[node name="Control" type="Control" parent="BG" unique_id=584005215]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control" unique_id=2136845015]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control2" type="Control" parent="BG" unique_id=96255777]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control2" unique_id=1634788131]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control3" type="Control" parent="BG" unique_id=6349303]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control3" unique_id=109020225]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control4" type="Control" parent="BG" unique_id=406101620]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control4" unique_id=935398686]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control5" type="Control" parent="BG" unique_id=276926590]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control5" unique_id=1054589018]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control6" type="Control" parent="BG" unique_id=1129652941]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control6" unique_id=2023661646]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control7" type="Control" parent="BG" unique_id=597388591]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control7" unique_id=1051339634]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control8" type="Control" parent="BG" unique_id=2082134134]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control8" unique_id=975774352]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control9" type="Control" parent="BG" unique_id=371700100]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control9" unique_id=726809900]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control10" type="Control" parent="BG" unique_id=254515505]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control10" unique_id=30859559]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control11" type="Control" parent="BG" unique_id=856220956]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control11" unique_id=561563107]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control12" type="Control" parent="BG" unique_id=116886084]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control12" unique_id=1880570675]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control13" type="Control" parent="BG" unique_id=2096662033]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control13" unique_id=217326360]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control14" type="Control" parent="BG" unique_id=528018471]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control14" unique_id=1857361848]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control15" type="Control" parent="BG" unique_id=276851560]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control15" unique_id=1276827350]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control16" type="Control" parent="BG" unique_id=216040030]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control16" unique_id=668109121]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control17" type="Control" parent="BG" unique_id=1191364420]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control17" unique_id=875424444]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control18" type="Control" parent="BG" unique_id=853781380]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control18" unique_id=28260583]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control19" type="Control" parent="BG" unique_id=456817605]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control19" unique_id=1608218185]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control20" type="Control" parent="BG" unique_id=1793159873]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control20" unique_id=893361412]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control21" type="Control" parent="BG" unique_id=898364469]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control21" unique_id=571507483]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control22" type="Control" parent="BG" unique_id=1770306571]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control22" unique_id=1899586514]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control23" type="Control" parent="BG" unique_id=946942994]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control23" unique_id=2047946729]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control24" type="Control" parent="BG" unique_id=464285029]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control24" unique_id=1701797283]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control25" type="Control" parent="BG" unique_id=1994390318]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control25" unique_id=626902480]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control26" type="Control" parent="BG" unique_id=1862478275]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control26" unique_id=668213339]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control27" type="Control" parent="BG" unique_id=2033675039]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control27" unique_id=20656697]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control28" type="Control" parent="BG" unique_id=200995419]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control28" unique_id=1254781208]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control29" type="Control" parent="BG" unique_id=744323167]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control29" unique_id=1525942264]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control30" type="Control" parent="BG" unique_id=127426590]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control30" unique_id=1333658132]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control31" type="Control" parent="BG" unique_id=476596218]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control31" unique_id=334855028]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control32" type="Control" parent="BG" unique_id=786803644]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control32" unique_id=906061726]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control33" type="Control" parent="BG" unique_id=998942916]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control33" unique_id=2036835105]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control34" type="Control" parent="BG" unique_id=99655222]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control34" unique_id=1024772559]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control35" type="Control" parent="BG" unique_id=621400011]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control35" unique_id=607647131]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control36" type="Control" parent="BG" unique_id=2101855901]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control36" unique_id=475315052]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control37" type="Control" parent="BG" unique_id=662922412]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control37" unique_id=1865030669]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control38" type="Control" parent="BG" unique_id=1825199389]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control38" unique_id=1659666180]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control39" type="Control" parent="BG" unique_id=2033223086]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control39" unique_id=1534369146]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Control40" type="Control" parent="BG" unique_id=1267907566]
+layout_mode = 2
+
+[node name="Pink" type="Sprite2D" parent="BG/Control40" unique_id=2103443244]
+position = Vector2(128, 128)
+scale = Vector2(4, 4)
+texture = ExtResource("1_uo3v1")
+
+[node name="Label" type="Label" parent="." unique_id=729428510]
+layout_mode = 0
+offset_left = 401.0
+offset_top = 151.0
+offset_right = 2198.0
+offset_bottom = 459.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4utos")
+theme_override_font_sizes/font_size = 256
+text = "You Died!?"
+
+[node name="Label2" type="Label" parent="." unique_id=1316012016]
+layout_mode = 0
+offset_left = 400.0
+offset_top = 498.0
+offset_right = 1566.0
+offset_bottom = 655.0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_4utos")
+theme_override_font_sizes/font_size = 64
+text = "I bet a billion dollars you died to the swinging ball of doom!"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="TextureButton" type="TextureButton" parent="." unique_id=1674937469]
+layout_mode = 0
+offset_left = 842.00006
+offset_top = 691.0
+offset_right = 863.00006
+offset_bottom = 713.0
+scale = Vector2(10, 10)
+texture_normal = ExtResource("3_uo3v1")
+script = ExtResource("4_4utos")
+
+[connection signal="pressed" from="TextureButton" to="TextureButton" method="_on_pressed"]
